@@ -9,6 +9,7 @@ import SpacePilot from './modules/SpacePilot'
 import Tetris from './modules/Tetris'
 import CrossStitch from './modules/CrossStitch'
 import SynonymsMixer from './modules/SynonymsMixer'
+import Gomoku from './modules/Gomoku'
 import About from './modules/About'
 import Contact from './modules/Contact'
 
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Route path="tetris" component={Tetris}/>
       <Route path="cross-stitch" component={CrossStitch}/>
       <Route path="synonyms-mixer" component={SynonymsMixer}/>
+      <Route path="gomoku" component={Gomoku}/>
       <Route path="about-me" component={About}/>
       <Route path="contact" component={Contact}/>
     </Route>

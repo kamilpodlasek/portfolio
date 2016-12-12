@@ -15,7 +15,7 @@ export default React.createClass({
 				<li>JavaScript</li>
 				<li>jQuery</li>
 			</ul>
-			<img src={"img/tetris.jpg"} role="presentation"/>
+			<img src={require("../img/tetris.jpg")} role="presentation"/>
     	</div>
 	);
   }

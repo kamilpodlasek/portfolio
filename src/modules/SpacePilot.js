@@ -18,7 +18,7 @@ export default React.createClass({
 				<li>AJAX</li>
 				<li>MySQL</li>
 			</ul>
-			<img src={"img/space-pilot.jpg"} role="presentation"/>
+			<img src={require("../img/space-pilot.jpg")} role="presentation"/>
     	</div>
 	);
   }

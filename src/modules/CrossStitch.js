@@ -19,8 +19,8 @@ export default React.createClass({
 				<li>Biblioteka FPDF (PHP)</li>
 				<li>AJAX</li>
 			</ul>
-			<img src={"img/cross-stitch.jpg"} role="presentation"/>
-			<img src={"img/cross-stitch1.jpg"} role="presentation"/>
+			<img src={require("../img/cross-stitch.jpg")} role="presentation"/>
+			<img src={require("../img/cross-stitch1.jpg")} role="presentation"/>
     	</div>
 	);
   }

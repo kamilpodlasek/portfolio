@@ -16,7 +16,7 @@ export default React.createClass({
 				<li>Biblioteka JSZip (JS)</li>
 				<li>jQuery</li>
 			</ul>
-			<img src={"img/synonyms-mixer.jpg"} role="presentation"/>
+			<img src={require("../img/synonyms-mixer.jpg")} role="presentation"/>
     	</div>
 	);
   }

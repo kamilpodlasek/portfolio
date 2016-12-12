@@ -15,7 +15,7 @@ export default React.createClass({
 	render() {
 		var img;
 		if(this.props.row === "1")
-			img = <img src={"img/" + this.props.url + ".png"} role="presentation"/>
+			img = <img src={require("../img/" + this.props.url + ".png")} role="presentation"/>
 		else if(this.props.row === "2")
 			img = <span className={"glyphicon glyphicon-" + this.props.glyphicon}></span>
 
