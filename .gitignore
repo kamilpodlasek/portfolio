@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# css files are generated from scss
+src/*.css
+src/**/*.css
+
 # dependencies
 node_modules
 

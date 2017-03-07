@@ -48,7 +48,7 @@ export default React.createClass({
             </div>
           </div>
           <div className="screenBottom">
-            <img src={require("./img/logo.png")} role="presentation"/>
+            <img src={require("./img/logo.png")} alt="logo"/>
           </div>
           <div className="screenHolder">
             <div className="screenHolderTop"></div>
