@@ -10,6 +10,7 @@ import Tetris from './modules/Tetris'
 import CrossStitch from './modules/CrossStitch'
 import SynonymsMixer from './modules/SynonymsMixer'
 import Gomoku from './modules/Gomoku'
+import SimpleLoginSystem from './modules/SimpleLoginSystem'
 import About from './modules/About'
 import Contact from './modules/Contact'
 
@@ -22,6 +23,7 @@ ReactDOM.render(
       <Route path="cross-stitch" component={CrossStitch}/>
       <Route path="synonyms-mixer" component={SynonymsMixer}/>
       <Route path="gomoku" component={Gomoku}/>
+      <Route path="simple-login-system" component={SimpleLoginSystem}/>
       <Route path="about-me" component={About}/>
       <Route path="contact" component={Contact}/>
     </Route>

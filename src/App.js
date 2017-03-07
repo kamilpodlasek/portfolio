@@ -64,6 +64,7 @@ export default React.createClass({
           <Button url="synonyms-mixer" row="1" name="Synonyms Mixer" animate={this.animate} />
           <Button url="gomoku" row="1" name="Gomoku" animate={this.animate} />
           <div className="margin"></div>
+          <Button url="simple-login-system" row="2" name="Simple Login System" animate={this.animate} />
           <Button url="about-me" row="2" name="O mnie" glyphicon="user" animate={this.animate} />
           <Button url="contact" row="2" name="Kontakt" glyphicon="envelope" animate={this.animate} />
         </div>
