@@ -16,7 +16,7 @@ export default React.createClass({
 		var img;
 		if(this.props.row === "1")
 			img = <img src={require("../img/" + this.props.url + ".png")} alt="button"/>
-		else if(this.props.row === "2")
+		else if(this.props.row === "2" && this.props.glyphicon)
 			img = <span className={"glyphicon glyphicon-" + this.props.glyphicon}></span>
 
 		var className = this.state.pressed ? ' pressed' : '';

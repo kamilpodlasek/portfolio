@@ -130,6 +130,7 @@ body {
   background: -webkit-linear-gradient(left,  rgba(150,151,155,1) 0%,rgba(211,212,216,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  rgba(150,151,155,1) 0%,rgba(211,212,216,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96979b', endColorstr='#d3d4d8',GradientType=1 ); /* IE6-9 */
+  z-index: 2;
 
   img {
     width: 5vh;
@@ -153,7 +154,7 @@ body {
   margin: 0 auto;
   left: 0; top: -9%; right: 0;
   box-shadow: 0 12px 8px 1px #74757a;
-  z-index: 100;
+  z-index: 1;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,848587+1,848587+16,c7c9cc+71,c7c9cc+75,737479+100 */
   background: rgb(0,0,0); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(132,133,135,1) 1%, rgba(132,133,135,1) 16%, rgba(199,201,204,1) 71%, rgba(199,201,204,1) 75%, rgba(115,116,121,1) 100%); /* FF3.6-15 */
@@ -181,7 +182,7 @@ body {
 
 .keyboard {
   width: 90%;
-  height: 38vh;
+  height: 34vh;
   margin: auto;
   position: absolute;
   left: 0; bottom: 0; right: 0;
@@ -190,6 +191,7 @@ body {
   transform: perspective(1000px) rotateX(40deg);
   background: url(./img/keyboardBg.jpg) no-repeat;
   background-size: cover;
+  z-index: 3;
 }
 
 .key {
@@ -266,7 +268,7 @@ body {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 870px) {
   .pc {
     width: 95%;
     width: 100vh;
