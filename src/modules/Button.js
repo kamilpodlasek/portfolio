@@ -13,20 +13,18 @@ export default React.createClass({
   	},
 
 	render() {
-		var img;
-		if(this.props.row === "1")
+		var img = "";
+		if(this.props.img)
 			img = <img src={require("../img/" + this.props.url + ".png")} alt="button"/>
-		else if(this.props.row === "2" && this.props.glyphicon)
+		else if(this.props.glyphicon)
 			img = <span className={"glyphicon glyphicon-" + this.props.glyphicon}></span>
 
 		var className = this.state.pressed ? ' pressed' : '';
 
 	    return (
-	      	<Link to={"/" + this.props.url}>
-				<div className={"key key" + this.props.row + className} onClick={this.handleClick}>
-					{this.props.name}
-			        {img}
-			    </div>
+	      	<Link to={"/" + this.props.url} className={"key key" + this.props.row + className} onClick={this.handleClick}>
+				{this.props.name}
+				{img}
 		    </Link>
 		);
 	}
