@@ -196,18 +196,21 @@ body {
   
   .projects {
     flex-basis: 80%;
-    padding: 0.2%;
+    margin: 1%;
+    /*
     margin: 1.5%;
+    padding: 0.2%;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.15);
+    */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 
     .key {
       width: 20%;
-      margin: 1%;
+      margin: 0.8vh;
     }
 
     .row1 {
@@ -223,16 +226,18 @@ body {
 
   .others {
     flex-basis: 20%;
-    margin: 1.5% 1.5% 1.5% 0;
+    //margin: 1.5% 1.5% 1.5% 0;
+    margin: 1% 1% 1% 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
 
     .key {
-      margin: 5% 5% 5% 1%;
+      //margin: 5% 5% 5% 1%;
+      margin: 0.8vh 0.8vh 0.8vh 0;
     }
 
-    > .key:nth-child(1) {
+    > .key:first-child {
       flex-basis: 50%;
     }
     > .key:nth-child(2) {
@@ -250,6 +255,7 @@ body {
       }
 
       .key:nth-child(2) {
+        margin-left: 0.8vh;
         background: #e1e0dd url(./img/eng.png) no-repeat;
         background-size: 70% 70%;
         background-position: center;
