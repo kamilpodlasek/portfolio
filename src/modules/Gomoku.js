@@ -1,18 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-export default React.createClass({
+export default connect(state => ({content: state.content}))(React.createClass({
   render() {
+    const data = this.props.content.page.gomoku;
     return (
     	<div>
 				<h2 className="text-center"><a href={"projects/gomoku"} target="_blank">Gomoku</a></h2>
-				<h3>Gra dla dwóch osób "Gomoku" - kółko i krzyżyk na 5 pól w rzędzie.</h3>
-				<h3>Można zmieniać ustawienia planszy i ilość pól w rzędzie potrzebną do zwycięstwa.</h3>
-				<h3>Użyte technologie:</h3>
-				<ul>
-					<li>React</li>
-				</ul>
+				<div dangerouslySetInnerHTML={{__html: data.description}}></div>
 				<img src={require("../img/gomoku.jpg")} alt="gomoku"/>
     	</div>
-	);
+		);
   }
-})
+}));

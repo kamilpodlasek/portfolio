@@ -1,7 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux'
+let actions = require('./actions');
+
 import Button from './modules/Button'
 
-export default React.createClass({
+let App = React.createClass({
   getInitialState : function () {
     return({ spinner : "spinner", component : "hidden" });
   },
@@ -19,6 +22,7 @@ export default React.createClass({
     });
   },
   render() {
+    const data = this.props.content.page.app;
     return (
       <div>
         <div className="pc">
@@ -57,18 +61,33 @@ export default React.createClass({
         </div>
 
         <div className="keyboard text-center">
-          <div className="margin"></div>
-          <Button url="space-pilot" row="1" name="Space Pilot" animate={this.animate} />
-          <Button url="tetris" row="1" name="Tetris" animate={this.animate} />
-          <Button url="cross-stitch" row="1" name="Cross-Stitch Generator" animate={this.animate} />
-          <Button url="synonyms-mixer" row="1" name="Synonyms Mixer" animate={this.animate} />
-          <Button url="gomoku" row="1" name="Gomoku" animate={this.animate} />
-          <div className="margin"></div>
-          <Button url="simple-login-system" row="2" name="Simple Login System" animate={this.animate} />
-          <Button url="about-me" row="2" name="O mnie" glyphicon="user" animate={this.animate} />
-          <Button url="contact" row="2" name="Kontakt" glyphicon="envelope" animate={this.animate} />
+          <div className="projects">
+            <div className="row1">
+              <Button url="space-pilot" row="1" name="Space Pilot" img={true} animate={this.animate} />
+              <Button url="tetris" row="1" name="Tetris" img={true} animate={this.animate} />
+              <Button url="gomoku" row="1" name="Gomoku" img={true} animate={this.animate} />
+              <Button url="synonyms-mixer" row="1" name="Synonyms Mixer" img={true} animate={this.animate} />
+            </div>
+            <div className="row2">
+              <Button url="cross-stitch" row="2" name="Cross-Stitch Generator" img={false} animate={this.animate} />
+              <Button url="simple-login-system" row="2" name="Simple Login System" img={false} animate={this.animate} />
+            </div>
+          </div>
+          <div className="others">
+            <div className="languages">
+              <Button url="pl" switchLanguage={this.props.switchLanguage} row="2" animate={this.animate} />
+              <Button url="en" switchLanguage={this.props.switchLanguage} row="2" animate={this.animate} />
+            </div>
+            <Button url="about-me" row="2" name={data.about} glyphicon="user" animate={this.animate} />
+            <Button url="contact" row="2" name={data.contact} glyphicon="envelope" animate={this.animate} />
+          </div>
         </div>
       </div>
     );
   }
-})
+});
+
+module.exports = connect(
+  state => ({content: state.content}),
+  dispatch => ({switchLanguage: lang => dispatch(actions.switchLanguage(lang))})
+)(App);

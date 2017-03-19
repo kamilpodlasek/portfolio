@@ -6,28 +6,31 @@ export default React.createClass({
 		return { pressed: false };
   	},
 
-  	handleClick: function() {
+  	handleClick: function(e) {
     	this.setState({pressed: true});
     	setTimeout(() => { this.setState({pressed: false}) }, 150);
     	this.props.animate();
+
+		if(this.props.url === "pl" || this.props.url === "en") {
+			e.preventDefault();
+			this.props.switchLanguage(this.props.url);
+		}
   	},
 
 	render() {
-		var img;
-		if(this.props.row === "1")
+		let img = "";
+		if(this.props.img)
 			img = <img src={require("../img/" + this.props.url + ".png")} alt="button"/>
-		else if(this.props.row === "2" && this.props.glyphicon)
+		else if(this.props.glyphicon)
 			img = <span className={"glyphicon glyphicon-" + this.props.glyphicon}></span>
 
-		var className = this.state.pressed ? ' pressed' : '';
+		let className = this.state.pressed ? ' pressed' : '';
 
 	    return (
-	      	<Link to={"/" + this.props.url}>
-				<div className={"key key" + this.props.row + className} onClick={this.handleClick}>
-					{this.props.name}
-			        {img}
-			    </div>
+	      	<Link to={"/" + this.props.url} className={"key key" + this.props.row + className} onClick={e => this.handleClick(e)}>
+				{this.props.name}
+				{img}
 		    </Link>
 		);
 	}
-})
+});
