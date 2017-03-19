@@ -1,23 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-export default React.createClass({
+export default connect(state => ({content: state.content}))(React.createClass({
   render() {
+    const data = this.props.content.page.synonymsMixer;
     return (
     	<div>
 				<h2 className="text-center"><a href={"projects/synonyms-mixer"} target="_blank">Synonyms Mixer</a></h2>
-				<h3>Mikser synonimów - aplikacja pozwalająca na wygenerowanie dowolnej ilości artykułów z synonimizowanego tekstu i pobranie ich.</h3>
-				<h3>Narzędzie szczególnie przydatne dla osób zajmujących się pozycjonowaniem stron internetowych.</h3>
-				<h3>Użyte technologie:</h3>
-				<ul>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>Bootstrap</li>
-					<li>JavaScript</li>
-					<li>Biblioteka JSZip (JS)</li>
-					<li>jQuery</li>
-				</ul>
+				<div dangerouslySetInnerHTML={{__html: data.description}}></div>
 				<img src={require("../img/synonyms-mixer.jpg")} alt="synonyms-mixer"/>
     	</div>
-	);
+		);
   }
-})
+}));

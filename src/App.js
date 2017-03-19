@@ -1,7 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux'
+let actions = require('./actions');
+
 import Button from './modules/Button'
 
-export default React.createClass({
+let App = React.createClass({
   getInitialState : function () {
     return({ spinner : "spinner", component : "hidden" });
   },
@@ -19,6 +22,7 @@ export default React.createClass({
     });
   },
   render() {
+    const data = this.props.content.page.app;
     return (
       <div>
         <div className="pc">
@@ -71,14 +75,19 @@ export default React.createClass({
           </div>
           <div className="others">
             <div className="languages">
-              <Button url="polish" row="2" animate={this.animate} />
-              <Button url="english" row="2" animate={this.animate} />
+              <Button url="pl" switchLanguage={this.props.switchLanguage} row="2" animate={this.animate} />
+              <Button url="en" switchLanguage={this.props.switchLanguage} row="2" animate={this.animate} />
             </div>
-            <Button url="about-me" row="2" name="O mnie" glyphicon="user" animate={this.animate} />
-            <Button url="contact" row="2" name="Kontakt" glyphicon="envelope" animate={this.animate} />
+            <Button url="about-me" row="2" name={data.about} glyphicon="user" animate={this.animate} />
+            <Button url="contact" row="2" name={data.contact} glyphicon="envelope" animate={this.animate} />
           </div>
         </div>
       </div>
     );
   }
-})
+});
+
+module.exports = connect(
+  state => ({content: state.content}),
+  dispatch => ({switchLanguage: lang => dispatch(actions.switchLanguage(lang))})
+)(App);

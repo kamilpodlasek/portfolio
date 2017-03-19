@@ -1,0 +1,76 @@
+[
+  {
+    "lang": "pl",
+    "page": {
+      "app": {
+        "about": "O mnie",
+        "contact": "Kontakt"
+      },
+      "about": {
+        "header": "O mnie",
+        "description": "<h3>Nazywam się Kamil Podlasek, urodziłem się 29 lutego 1996 roku. Tak, mam urodziny co cztery lata.</h3><h3>Studiuję Informatykę na Wydziale Matematyki Stosowanej Politechniki Śląskiej.</h3><h3>Zajmuję się tworzeniem stron internetowych, głównie od strony front-endu.</h3><h3>W projektach używam między innymi takich języków i technologii, jak HTML5, CSS3, Bootstrap, JavaScript (ES6/TS), Angular, React oraz jQuery.</h3><h3>Jestem minimalistą i perfekcjonistą, co staram się przekładać na tworzony przeze mnie kod.</h3><h3>Pasjonuję się piłką nożną i muzyką. Poza kibicowaniem i słuchaniem samemu kopię i grywam na instrumentach, głównie na gitarze basowej.</h3>"
+      },
+      "contact": {
+        "header": "Kontakt"
+      },
+      "crossStitch": {
+        "description": "<h3>Generator haftu krzyżykowego - aplikacja generuje wzór do haftu krzyżykowego z dowolnego zdjęcia.</h3><h3>Wzór gotowy do druku wraz ze spisem nici marki DMC potrzebnych do wyszycia obrazu można pobrać w formacie PDF.</h3><h3>Użyte technologie:</h3><ul><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>JavaScript</li><li>jQuery</li><li>PHP</li><li>Biblioteka GD (PHP)</li><li>Biblioteka FPDF (PHP)</li><li>AJAX</li></ul>"
+      },
+      "gomoku": {
+        "description": "<h3>Gra dla dwóch osób \"Gomoku\" - kółko i krzyżyk na 5 pól w rzędzie.</h3><h3>Można zmieniać ustawienia planszy i ilość pól w rzędzie potrzebną do zwycięstwa.</h3><h3>Użyte technologie:</h3><ul><li>React</li></ul>"
+      },
+      "home": {
+        "description": "Kliknij interesujący Cię projekt lub dział na klawiaturze poniżej."
+      },
+      "simpleLoginSystem": {
+        "description": "<h3>Prosty system logowania i rejestracji korzystający z angular-in-memory-web-api.</h3><h3>System posiada panel administratora pozwalający na zarządzanie użytkownikami.</h3><h3>Użyte technologie:</h3><ul><li>Angular</li></ul>"
+      },
+      "spacePilot": {
+        "description": "<h3>Gra w której zadaniem gracza jest utrzymanie sondy kosmicznej w atmosferze księżyca.</h3><h3>Sterowanie odbywa się za pomocą myszy, gracz ma za zadanie odbijać sondę kursorem.</h3><h3>Z każdym kolejnym poziomem gracz dostaje więcej punktów, a każde odbicie powoduje przyspieszenie sondy.</h3><h3>Użyte technologie:</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>jQuery</li><li>PHP</li><li>AJAX</li><li>MySQL</li></ul>"
+      },
+      "synonymsMixer": {
+        "description": "<h3>Mikser synonimów - aplikacja pozwalająca na wygenerowanie dowolnej ilości artykułów z synonimizowanego tekstu i pobranie ich.</h3><h3>Narzędzie szczególnie przydatne dla osób zajmujących się pozycjonowaniem stron internetowych.</h3><h3>Użyte technologie:</h3><ul><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>JavaScript</li><li>Biblioteka JSZip (JS)</li><li>jQuery</li></ul>"
+      },
+      "tetris": {
+        "description": "<h3>Przeglądarkowa wersja słynnej gry \"Tetris\".</h3><h3>Gracz ma za zadanie tak kierować spadającymi klockami, żeby tworzyły pełne rzędy które następnie są usuwane.</h3><h3>Rozgrywka kończy się w momencie, gdy nowo powstały klocek koliduje z pozostałymi kostkami.</h3><h3>Użyte technologie:</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>jQuery</li></ul>"
+      }
+    }
+  },
+  {
+    "lang": "en",
+    "page": {
+      "app": {
+        "about": "About me",
+        "contact": "Contact"
+      },
+      "about": {
+        "header": "About me",
+        "description": "<h3>My name is Kamil Podlasek, I was born on 29th February 1996. Yes, I have a birthday once every four years.</h3><h3>I study Computer Science at the Silesian University of Technology, Faculty of Applied Mathematics.<h3>I create websites, mostly front-end part.</h3><h3>In my projects I use technologies like HTML5, CSS3, Bootstrap, JavaScript (ES6/TS), Angular, React and jQuery.<h3>I am a minimalist and a perfectionist, and I try to take advantage of these traits while writing code.</h3><h3>I am passionate about football and music. Besides watching and listening, I also kick a ball sometimes and play instruments, mostly bass guitar.</h3>"
+      },
+      "contact": {
+        "header": "Contact"
+      },
+      "crossStitch": {
+        "description": "<h3>Application which generates patterns for cross-stitch from any picture.</h3><h3>Ready for print patterns including list of necessary DMC threads are available to download in PDF format.</h3><h3>Used technologies:</h3><ul><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>JavaScript</li><li>jQuery</li><li>PHP</li><li>GD library (PHP)</li><li>FPDF library (PHP)</li><li>AJAX</li></ul>"
+      },
+      "gomoku": {
+        "description": "<h3>Game for two players \"Gomoku\", also known as Five in a Row.</h3><h3>Player can change game settings and a number of fields in a row needed to win.</h3><h3>Used technologies:</h3><ul><li>React</li></ul>"
+      },
+      "home": {
+        "description": "Press a button you are interested in on the keyboard below."
+      },
+      "simpleLoginSystem": {
+        "description": "<h3>Simple login and registration system using angular-in-memory-web-api.</h3><h3>System has got an admin panel allowing user management.</h3><h3>Used technologies:</h3><ul><li>Angular</li></ul>"
+      },
+      "spacePilot": {
+        "description": "<h3>A game in which player has to keep space probe in the atmosphere of the moon.</h3><h3>This can be done by controlling it with a mouse - probe bounces off when it touches a cursor.</h3><h3>Player gets more points with every level, and every space probe bounce results in its speed increase.</h3><h3>Used technologies:</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>jQuery</li><li>PHP</li><li>AJAX</li><li>MySQL</li></ul>"
+      },
+      "synonymsMixer": {
+        "description": "<h3>Applications allows generating any amount of articles from a synonymised text and downloading them.</h3><h3>The tool is useful especially for SEO positioners.</h3><h3>Used technologies:</h3><ul><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>JavaScript</li><li>JSZip library (JS)</li><li>jQuery</li></ul>"
+      },
+      "tetris": {
+        "description": "<h3>Browser version of a popular game \"Tetris\".</h3><h3>Player has to move the falling blocks so that they form complete rows, which are removed from the field.</h3><h3>Game is ended when newly created block collides with blocks on field.</h3><h3>Used technologies:</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>jQuery</li></ul>"
+      }
+    }
+  }
+]
